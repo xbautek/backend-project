@@ -20,7 +20,7 @@ namespace WebAPI.Controllers
 
         // GET: api/University?pageNumber=1&pageSize=10
         [HttpGet]
-        public async Task<ActionResult<PagedResult<University>>> GetUniversities(int pageNumber = 1, int pageSize = 10)
+        public async Task<ActionResult<PagedResult<University>>> GetUniversities(int pageNumber = 1, int pageSize = 3)
         {
             var universities = _context.Universities.AsQueryable();
 
